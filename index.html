@@ -20,7 +20,7 @@
                 <h2 class="timer-inner-text">TIMER</h2>
             </div>
 
-            <div class="container">
+            <form class="container">
                 <div class="hours">
                     <p class="title">HRS</p>
                     <input type="number" placeholder="00" class="timer box" max="99">
@@ -31,15 +31,17 @@
                 </div>
                 <div class="seconds">
                     <p class="title">SEC</p>
-                    <input type="number" placeholder="00" class="timer box" max="59">
+                    <input type="number" placeholder="00" class="timer box" id="input-sec" max="59">
                 </div>
-            </div>
+            </form>
 
+            
             <div class="btn-section">
-                <button class="btn btn-start" id="start">
+                <button class="btn btn-start on" id="start">
                     <img src="./img/Vector 7.png" alt="" id="start-img">
                     <span>START</span>
                 </button>
+
                 <button class="btn btn-reset" id="stop">
                     <img src="./img/icon-reset-disabled.png" id="stop-img" alt="">
                     <span>STOP</span>
@@ -49,6 +51,32 @@
     </article>
     <footer>@ WENIV CORP.</footer>
     <script src="timer.js"></script>
+            <script>
+                // 자스 구현이 바로 생각이 안나서 그냥 input 빼고
+                // 타이머 start 클릭 시 10초 나타나게 하고
+                // 1초마다 -1 하려고 함
+    
+                // 대충 이렇게 구상했었음..
+                // var count = 10;
+                // setInterval(function(){
+                // count -= 1;
+                // if (count >= 0){
+                // document.querySelector('').innerHTML = count;
+                // }
+                // }, 1000);
+                // ㄴ> 왜 그랬지...?
+            </script>
+
+            <script>
+                const btnStart = document.querySelector('.btn-start');
+
+                const btnReset = document.querySelector('.btn-reset');
+
+                const timerSec = document.querySelector('#input-sec').value;
+
+
+            </script>
+
 </body>
 
 </html>
