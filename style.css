@@ -70,20 +70,27 @@ footer {
   justify-content: center;
   margin-top: 53px;
 }
-.container .box {
-  margin: 12px;
-  margin-top: 4px;
+
+.container span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 80px;
   height: 80px;
-  color: white;
+  margin: 12px;
   text-align: center;
-  background: url(./img/box.png);
   font-family: "Pretendard";
   font-style: normal;
   font-weight: 700;
   font-size: 40px !important;
   line-height: 48px;
   text-align: center;
+  line-height: 48px;
+  margin-top: 4px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  background: url("../img/box.png") no-repeat 0 0;
 }
 
 .container .title {

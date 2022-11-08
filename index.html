@@ -22,16 +22,22 @@
 
             <form class="container">
                 <div class="hours">
-                    <p class="title">HRS</p>
-                    <input type="number" placeholder="00" class="timer box" max="99">
+                    <button class="timer-btn">
+                        <p class="title">HRS</p>
+                        <span class="timer box">00</span>
+                    </button>
                 </div>
                 <div class="minutes">
-                    <p class="title">MIN</p>
-                    <input type="number" placeholder="00" class="timer box" max="59">
+                    <button class="timer-btn">
+                        <p class="title">MIN</p>
+                        <span class="timer box">00</span>
+                    </button>
                 </div>
                 <div class="seconds">
-                    <p class="title">SEC</p>
-                    <input type="number" placeholder="00" class="timer box" id="input-sec" max="59">
+                    <button class="timer-btn">
+                        <p class="title">SEC</p>
+                        <span class="timer box">00</span>
+                    </button>
                 </div>
             </form>
 
@@ -42,9 +48,14 @@
                     <span>START</span>
                 </button>
 
+                <button class="btn btn-start on" id="start" hidden>
+                    <img src="./img/icon-stop.png" alt="" id="start-img">
+                    <span>PAUSE</span>
+                </button>
+
                 <button class="btn btn-reset" id="stop">
                     <img src="./img/icon-reset-disabled.png" id="stop-img" alt="">
-                    <span>STOP</span>
+                    <span>RESET</span>
                 </button>
             </div>
         </section>
