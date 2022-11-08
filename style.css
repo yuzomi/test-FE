@@ -1,3 +1,9 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 body {
   background: radial-gradient(
       96.74% 276.79% at 3.59% 5.28%,
@@ -50,12 +56,12 @@ footer {
 .timer-inner-text::after {
   content: "";
   position: absolute;
-
   left: -120px;
   bottom: -20px;
   height: 1px;
   width: 312px;
   background: #3d538a;
+  box-shadow: 0 1px 1px 0 #5b75b4;
 }
 
 /* 시계 부분 */
@@ -66,7 +72,7 @@ footer {
 }
 .container .box {
   margin: 12px;
-  padding-top: 18px;
+  margin-top: 4px;
   width: 80px;
   height: 80px;
   font-size: 3rem;
@@ -85,6 +91,46 @@ footer {
   font-size: 12px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.container input::placeholder {
+  color: white;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  /* identical to box height */
+
+  text-align: center;
+}
+
+.hours {
+  position: relative;
+}
+
+.hours::after {
+  content: " ";
+  position: absolute;
+  left: 100px;
+  top: 45px;
+  width: 6px;
+  height: 26px;
+  background: url(./img/dot.png);
+}
+
+.minutes {
+  position: relative;
+}
+
+.minutes::after {
+  content: " ";
+  position: absolute;
+  left: 100px;
+  top: 45px;
+  width: 6px;
+  height: 26px;
+  background: url(./img/dot.png);
 }
 
 .btn {
@@ -106,6 +152,20 @@ footer {
 
 .btn-start {
   margin-right: 10px;
+}
+
+#stop-img {
+  float: left;
+  margin-left: 27px;
+  margin-right: -23px;
+  width: 13.26px;
+}
+
+#start-img {
+  float: left;
+  margin-left: 27px;
+  margin-right: -23px;
+  width: 10px;
 }
 
 footer {
