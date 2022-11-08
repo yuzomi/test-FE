@@ -20,6 +20,20 @@
                 <h2 class="timer-inner-text">TIMER</h2>
             </div>
 
+            // 자스 구현이 바로 생각이 안나서 그냥 input 빼고
+            // 타이머 start 클릭 시 10초 나타나게 하고
+            // 1초마다 -1 하려고 함
+           
+            // 대충 이렇게 구상했었음..
+            //     var count = 10;
+            //         setInterval(function(){
+            //     count -= 1;
+            //     if (count >= 0){
+            //       document.querySelector('').innerHTML = count;
+            //     } 
+            //   }, 1000);
+            // ㄴ> 왜 그랬지...? 
+           
             <div class="container">
                 <div class="hours">
                     <p class="title">HRS</p>
@@ -34,6 +48,8 @@
                     <div class="timer box">00</div>
                 </div>
             </div>
+            
+            // 
 
             <div class="btn-section">
                 <button class="btn btn-start" id="start">START</button>
