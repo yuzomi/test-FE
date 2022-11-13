@@ -86,7 +86,13 @@ window.addEventListener("click", (event) => {
       if (초 === 0) {
         clearInterval(타이머);
         시작버튼.style.backgroundColor = "#324577";
+        시작버튼.style.color = "#617199";
         초기화버튼.style.backgroundColor = "#324577";
+        초기화버튼.style.color = "#617199";
+        시작버튼.removeAttribute("hidden");
+        정지버튼.setAttribute("hidden", true);
+        시작버튼이미지.src = "./img/Vector 7.png";
+        초기화버튼이미지.src = "./img/icon-reset-disabled.png";
       }
     }
 
