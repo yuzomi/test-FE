@@ -22,38 +22,39 @@
 
             <form class="container">
                 <div class="hours">
-                    <button class="timer-btn">
+                    <button type="button" class="timer-btn">
                         <p class="title">HRS</p>
                         <span class="timer box">00</span>
                     </button>
                 </div>
                 <div class="minutes">
-                    <button class="timer-btn">
+                    <button type="button" class="timer-btn">
                         <p class="title">MIN</p>
                         <span class="timer box">00</span>
                     </button>
                 </div>
                 <div class="seconds">
-                    <button class="timer-btn">
+                    <button type="button" class="timer-btn">
                         <p class="title">SEC</p>
                         <span class="timer box">00</span>
                     </button>
                 </div>
             </form>
 
-            
+
+
             <div class="btn-section">
                 <button class="btn btn-start on" id="start">
                     <img src="./img/Vector 7.png" alt="" id="start-img">
                     <span>START</span>
                 </button>
 
-                <button class="btn btn-start on" id="start" hidden>
-                    <img src="./img/icon-stop.png" alt="" id="start-img">
+                <button class="btn btn-start on" id="pause" hidden>
+                    <img src="./img/icon-stop.png" alt="" id="pause-img">
                     <span>PAUSE</span>
                 </button>
 
-                <button class="btn btn-reset" id="stop">
+                <button type="reset" class="btn btn-reset" id="stop">
                     <img src="./img/icon-reset-disabled.png" id="stop-img" alt="">
                     <span>RESET</span>
                 </button>
@@ -62,31 +63,6 @@
     </article>
     <footer>@ WENIV CORP.</footer>
     <script src="timer.js"></script>
-            <script>
-                // 자스 구현이 바로 생각이 안나서 그냥 input 빼고
-                // 타이머 start 클릭 시 10초 나타나게 하고
-                // 1초마다 -1 하려고 함
-    
-                // 대충 이렇게 구상했었음..
-                // var count = 10;
-                // setInterval(function(){
-                // count -= 1;
-                // if (count >= 0){
-                // document.querySelector('').innerHTML = count;
-                // }
-                // }, 1000);
-                // ㄴ> 왜 그랬지...?
-            </script>
-
-            <script>
-                const btnStart = document.querySelector('.btn-start');
-
-                const btnReset = document.querySelector('.btn-reset');
-
-                const timerSec = document.querySelector('#input-sec').value;
-
-
-            </script>
 
 </body>
 
