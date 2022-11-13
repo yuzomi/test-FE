@@ -164,9 +164,15 @@ footer {
 
 #stop-img {
   float: left;
+  margin-top: 1px;
   margin-left: 27px;
   margin-right: -23px;
   width: 13.26px;
+}
+
+#pause {
+  color: white;
+  background-color: #15c2b8;
 }
 
 #start-img {
@@ -174,6 +180,14 @@ footer {
   margin-left: 27px;
   margin-right: -23px;
   width: 10px;
+}
+
+#pause-img {
+  float: left;
+  margin-top: 2px;
+  margin-left: 27px;
+  margin-right: -23px;
+  width: 11px;
 }
 
 footer {
