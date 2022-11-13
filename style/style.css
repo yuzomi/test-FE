@@ -90,7 +90,7 @@ footer {
   color: #fff;
   font-size: 40px;
   font-weight: 700;
-  background: url("./img/box.png") no-repeat 0 0;
+  background: url("../img/box.png") no-repeat 0 0;
 }
 
 .container .title {
@@ -138,7 +138,7 @@ footer {
   top: 45px;
   width: 6px;
   height: 26px;
-  background: url(./img/dot.svg);
+  background: url(../img/dot.svg);
 }
 
 .btn-section {
