@@ -124,7 +124,7 @@ footer {
   top: 45px;
   width: 6px;
   height: 26px;
-  background: url(./img/dot.svg);
+  background: url(../img/dot.svg);
 }
 
 .minutes {
